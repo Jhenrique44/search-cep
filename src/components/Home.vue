@@ -1,8 +1,16 @@
 <template>
   <div class="container">
     <section class="content">
-      <input type="number" v-model="cep" />
-      <button name="search" @click="searchCep(cep)"></button>
+
+    </section>
+    <section id="about">
+
+    </section>
+    <section id="projects">
+
+    </section>
+    <section id="contact">
+
     </section>
   </div>
 </template>
@@ -27,3 +35,11 @@ export default {
   },
 };
 </script>
+<style>
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+</style>
