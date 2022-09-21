@@ -2,7 +2,10 @@
   <nav class="nav-menu">
     <i class="fas fa-bars" @click="showMenu()"></i>
 
-    <div class="nav-content" :class="this.showMobile ? 'open-menu' : 'closed-menu'">
+    <div
+      class="nav-content"
+      :class="this.showMobile ? 'open-menu' : 'closed-menu'"
+    >
       <div class="logo">Jhenrique44</div>
       <ol class="nav-items">
         <li><a href="#home">Overview</a></li>
@@ -10,9 +13,14 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="https://github.com/Jhenrique44" target="_blank"><img src="../assets/github.svg" alt="Github" /></a>
+          <a href="https://github.com/Jhenrique44" target="_blank"
+            ><img src="../assets/GitHub.png" alt="Github"
+          /></a>
         </li>
-        <li><a href="https://www.linkedin.com/in/joaohenriquefq/" target="_blank"><img src="" alt="Linkedin"></a>
+        <li>
+          <a href="https://www.linkedin.com/in/joaohenriquefq/" target="_blank"
+            ><img src="../assets/linkedin-112.svg" alt="Linkedin"
+          /></a>
         </li>
       </ol>
     </div>
@@ -24,14 +32,14 @@ export default {
   data() {
     return {
       showMobile: false,
-    }
+    };
   },
   methods: {
     showMenu() {
       this.showMobile = !this.showMobile;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .nav-menu {
