@@ -3,8 +3,8 @@
     <section id="Home" class="content">
       <div class="text">
         <h2>Hi, my name is</h2>
-        <h1>João Henrique.</h1>
-        <h2>Front-End Developer.</h2>
+        <h1>João Henrique</h1>
+        <h1 style="color: rgba(255, 255, 255, 0.75) ">I am a Front-End Developer.</h1>
         <p>
           I'm a Front-End developer intern at Huawei, I'm also a student of Computer Engineering. I have been working
           with VueJs, utilizing HTML5 CSS3 and JavaScript to build Huawei internal applications and systems.

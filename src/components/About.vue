@@ -1,8 +1,10 @@
 <template>
   <div class="about-container">
     <header>
-      <h1>About Me</h1>
-      <p>-</p>
+      <div class="title-row">
+        <h1>About Me</h1>
+        <p>-</p>
+      </div>
     </header>
 
     <body>
@@ -55,6 +57,10 @@ export default {
   background: transparent;
   min-height: calc(100vh - 100px);
   padding: 0 20px;
+}
+
+.title-row {
+  display: flex;
 }
 
 h1 {
