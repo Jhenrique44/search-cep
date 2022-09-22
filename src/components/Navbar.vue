@@ -4,8 +4,8 @@
 
     <div class="nav-content" :class="this.showMobile ? 'open-menu' : 'closed-menu'">
       <div class="logo">Jhenrique44</div>
-      <ol class="nav-items">
-        <li><a href="#home">Overview</a></li>
+      <ul class="nav-items">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -16,7 +16,7 @@
           <a href="https://www.linkedin.com/in/joaohenriquefq/" target="_blank"><img src="../assets/linkedin-112.svg"
               alt="Linkedin" /></a>
         </li>
-      </ol>
+      </ul>
     </div>
   </nav>
 </template>
@@ -54,7 +54,7 @@ export default {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 5%;
+  gap: 2rem;
 
   li {
     padding: 0 10px;

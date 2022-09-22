@@ -6,7 +6,6 @@
 #app {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(
@@ -17,6 +16,9 @@
   );
 }
 
+body {
+  background: transparent;
+}
 @media (min-width: 1024px) {
   body {
     display: flex;
