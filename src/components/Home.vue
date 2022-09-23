@@ -1,13 +1,15 @@
 <template>
   <div class="container">
-    <section id="Home" class="content">
-      <div class="text">
+    <section id="Home" class="content-home">
+      <div class="text-home">
         <h2>Hi, my name is</h2>
         <h1>João Henrique</h1>
-        <h1 style="color: rgba(255, 255, 255, 0.75) ">I am a Front-End Developer.</h1>
-        <p>
-          I'm a Front-End developer intern at Huawei, I'm also a student of Computer Engineering. I have been working
-          with VueJs, utilizing HTML5 CSS3 and JavaScript to build Huawei internal applications and systems.
+        <h1 style="color: rgba(255, 255, 255, 0.75); font-size: 70px;">I am a Front-End Developer.</h1>
+        <p style="margin-top: 2rem;">
+          Currently a Front-End developer intern at Huawei, I'm also a student of Computer Engineering. I have been
+          working
+          with VueJs, utilizing HTML5 CSS3 and JavaScript to build <a href="https://www.huawei.com/br/" target="_blank"
+            rel="noreferrer">Huawei</a> internal applications and systems.
         </p>
         <div class="button-row">
           <button class="btn-resume">Resume</button>
@@ -61,17 +63,26 @@ export default {
 
 * {
   font-family: $font-family1;
+  font-weight: 600;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  a {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+  }
 }
 
-.content {
+.content-home {
   display: flex;
   gap: 3%;
   min-height: calc(100vh - 100px);
@@ -82,17 +93,40 @@ export default {
     font-weight: 600;
     color: #fff;
   }
+
+  a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0.3em;
+    right: 0;
+    background-color: #950041;
+    transition: width 0.25s ease-out;
+  }
+
+  a:hover::after {
+    color: #950041;
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+
+  button:hover {
+    background: rgba(149, 0, 65, 0.4);
+  }
 }
 
-.text {
+.text-home {
   display: flex;
-  // margin-top: 150px;
   justify-content: center;
   padding: 0 50px;
   flex-direction: column;
 
   h2 {
-    color: rgba(255, 255, 255, 0.95);
+    color: $primary-color;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
   }
 
   p {
@@ -118,7 +152,7 @@ export default {
 .button-row {
   display: flex;
   justify-content: flex-start;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 button {
